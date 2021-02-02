@@ -17,10 +17,8 @@
 
 void SPI_VoidMasterInit(void){
 	
-	SPI_DDRB|=	(1<<SS	);
-	SPI_DDRB|=	(1<<MOSI);
-	SPI_DDRB|=	(1<<SCK	);
-	SPI_DDRB&= ~(1<<MISO);	
+	SPI_DDRB|=	(1<<SS)|(1<<MOSI)|(1<<SCK);
+	SPI_DDRB&=     ~(1<<MISO);	
 	
 	/*		The MSB is transmitted first.
 	When the DORD bit is written to one, the LSB of the data word is transmitted first.
