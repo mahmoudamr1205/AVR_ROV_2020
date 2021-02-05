@@ -18,8 +18,7 @@
 	   {
 	   case 1:
 		  DDRD|= (1<<DDD6);
-		  rduty_cycle =0;
-		   duty_cycle =0;
+		 
 		  rduty_cycle = (value/ amp);
 		  duty_cycle =(rduty_cycle*rduty_cycle);
 		  OCR0A = (duty_cycle*256) ;
@@ -30,8 +29,7 @@
 	      case 2:
 		  
 		  DDRD|= (1<<DDD5);
-		  rduty_cycle =0;
-		  duty_cycle =0;
+		 
 		  rduty_cycle = (value/ amp);
 		  duty_cycle =(rduty_cycle*rduty_cycle);
 		  OCR0B = (duty_cycle*256) ;
@@ -42,8 +40,7 @@
 	 case 3:
 		 
 		  DDRB |= (1 << DDB1) ;
-		  rduty_cycle =0;
-		  duty_cycle =0;  
+		 
 		  rduty_cycle = (value/ amp);
 		  duty_cycle =(rduty_cycle*rduty_cycle);
 		  OCR1A = (duty_cycle*256) ;
@@ -55,8 +52,7 @@
 	  
 	 case  4:
 		  DDRB |= (1 << DDB2) ;
-		 rduty_cycle =0;
-		 duty_cycle =0;
+		
 		  rduty_cycle = (value/ amp);
 		  duty_cycle =(rduty_cycle*rduty_cycle);
 		  OCR1B = (duty_cycle*256) ;
@@ -69,8 +65,7 @@
 	  case 5:
 		  
 		  DDRB |= (1 << DDB3) ;
-		 rduty_cycle =0;
-		 duty_cycle =0;
+		
 		  rduty_cycle = (value/ amp);
 		  duty_cycle =(rduty_cycle*rduty_cycle);
 		  OCR2A = (duty_cycle*256) ;
@@ -84,8 +79,6 @@
 	  case 6:
 		 
 		  DDRD|= (1<<DDD3);
-		  rduty_cycle =0;
-		  duty_cycle =0;
 		  rduty_cycle = (value/ amp);
 		  duty_cycle =(rduty_cycle*rduty_cycle);
 		  OCR2B = (duty_cycle*256) ;
